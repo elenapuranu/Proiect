@@ -4,10 +4,13 @@
              x:Class="Proiect.MainPage">
 
     <ScrollView>
+        
         <VerticalStackLayout
             Spacing="25"
-            Padding="30,0"
+            Padding="20,0"
             VerticalOptions="Center">
+
+            <Image Source="eveniment.png" Aspect="AspectFill"  />
 
             <Label
                 Text="Hello, user!"

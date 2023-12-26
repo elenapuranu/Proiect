@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proiect.Cultural"
+             Title="Cultural">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Imagine de fundal -->
+        <Image Source="cultural.jpg" Aspect="AspectFill"  />
+
+        <!-- StackLayout pentru a grupa etichetele vertical -->
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <!-- Etichete pentru evenimente -->
+            <Label Text="Festivalul de Artă Contemporană - Art Safari"
+                TextColor="Black"
+                FontSize="25"
+                FontAttributes="Bold"
+                Padding="5"
+                Margin="0,0,0,10"
+                />
+
+
+            <Label Text="Festivalul Cerbul de Aur"
+                TextColor="Black" 
+                FontSize="23"
+                FontAttributes="Bold"
+                Padding="5"
+                Margin="0,0,0,10"
+                />
+            <Label Text="Festivalul Internațional de Folclor Cântecele Munților"
+                TextColor="Black" 
+                FontSize="23"
+                FontAttributes="Bold"
+                Padding="5"
+                Margin="0,0,0,10"
+                />
+        </StackLayout>
+    </Grid>
+</ContentPage>

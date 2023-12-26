@@ -3,12 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Proiect.Events"
              Title="Events">
-    <VerticalStackLayout Spacing="10" Margin="10">
-        <HorizontalStackLayout Spacing="10">
-            <Label FontSize="13" FontAttributes="Bold" Text="Balul bobocilor" VerticalOptions="End" />
-            
-        </HorizontalStackLayout>
-       
-
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Margin="10">
+            <Label FontSize="13" FontAttributes="Bold" Text="       Through our mobile application, we bring an unforgettable experience to your fingertips, blending entertainment, culture, and social interaction. Discover a diverse array of events:"/>
+            <Label Text="   •In the section dedicated to cultural events, explore art exhibitions, theater performances, and concerts. Purchase tickets and stay informed about artistic happenings around you." />
+            <Label Text="   •Social gatherings become more enjoyable with speed dating nights and themed parties. Stay updated on social events in your community and connect with new people." />
+            <Label Text="   •The entertainment section invites you to outdoor film screenings, talent competitions, and other captivating events." />
+            <Label Text="   •Don't miss out on local festivals and fairs! Explore the schedule and take part in authentic experiences." />
+            <Label Text="   •Together, let's live unique moments and build a vibrant community where each event becomes a story to be shared." VerticalOptions="EndAndExpand" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

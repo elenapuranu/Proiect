@@ -3,10 +3,61 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Proiect.Divertisment"
              Title="Divertisment">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Imagine de fundal -->
+        <Image Source="divertisment.jpg" Aspect="AspectFill"  />
+
+        <!-- StackLayout pentru a grupa etichetele vertical -->
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <!-- Etichete pentru evenimente -->
+            <Label Text="TIFF-Transilvania International Film Festival"
+                   TextColor="Black"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   Padding="5"
+                   Margin="0,0,0,10"
+                   />
+            
+
+            <Label Text="Untold Festival"
+                   TextColor="Black" 
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   Padding="5"
+                   Margin="0,0,0,10"
+                   />
+
+            <Label Text="Bucharest Jazz Festival"
+                   TextColor="Black" 
+                   FontSize="25"
+                   FontAttributes="Bold"
+                    Padding="5"
+                    Margin="0,0,0,10"
+                   />
+
+            <Label Text="Sibiu International Theatre Festival"
+                   TextColor="Black"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                    Padding="5"
+                    Margin="0,0,0,10"
+                   />
+
+            <Label Text="Rockstadt Extreme-Brașov"
+                   TextColor="Black" 
+                   FontSize="25"
+                   FontAttributes="Bold"
+                    Padding="5"
+                    Margin="0,0,0,10"
+                   />
+        </StackLayout>
+    </Grid>
 </ContentPage>

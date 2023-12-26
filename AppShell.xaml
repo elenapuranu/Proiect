@@ -11,8 +11,12 @@
         <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}"/>
         <ShellContent Title="About" ContentTemplate="{DataTemplate local:About}"/>
         <Tab Title="Events">
-            <ShellContent Title="Event" ContentTemplate="{DataTemplate local:Events}"/>
+            <ShellContent Title="Description" ContentTemplate="{DataTemplate local:Events}"/>
             <ShellContent Title="Divertisment" ContentTemplate="{DataTemplate local:Divertisment}"/>
+            <ShellContent Title="Cultural" ContentTemplate="{DataTemplate local:Social}"/>
+            <ShellContent Title="Social" ContentTemplate="{DataTemplate local:Cultural}"/>
+            <ShellContent Title="My events" ContentTemplate="{DataTemplate local:ListEntryPage}"
+ />
         </Tab>
         
 
