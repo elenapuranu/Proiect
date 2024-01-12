@@ -10,13 +10,13 @@ public partial class ListEntryPage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        listView.ItemsSource = await App.Database.GetTicketAsync();
+        listView.ItemsSource = await App.Database.GetShopListsAsync();
     }
-    async void OnTicketAddedClicked(object sender, EventArgs e)
+    async void OnShopListAddedClicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new ListPage
         {
-            BindingContext = new Ticket()
+            BindingContext = new ShopList()
         });
     }
     async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -25,23 +25,8 @@ public partial class ListEntryPage : ContentPage
         {
             await Navigation.PushAsync(new ListPage
             {
-                BindingContext = e.SelectedItem as Ticket
+                BindingContext = e.SelectedItem as ShopList
             });
         }
-    }
-
-    async void OnSaveButtonClicked(object sender, EventArgs e)
-    {
-        var tlist = (Ticket)BindingContext;
-        tlist.Date = DateTime.UtcNow;
-        await App.Database.SaveTicketAsync(tlist);
-        await Navigation.PopAsync();
-    }
-
-    async void OnDeleteButtonClicked(object sender,EventArgs e)
-    {
-        var tlist = (Ticket)BindingContext;
-        await App.Database.DeleteTicketAsync(tlist);
-        await Navigation.PopAsync();
     }
 }

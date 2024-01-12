@@ -13,7 +13,7 @@ public partial class App : Application
 		{
 			if (database == null)
 			{
-				database = new TicketListDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Ticket.db3"));
+				database = new TicketListDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ShoppingList.db3"));
 			}
 			return database;
 		}

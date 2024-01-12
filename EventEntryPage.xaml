@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Proiect.ListEntryPage"
-             Title="ListEntryPage">
+             x:Class="Proiect.EventEntryPage"
+             Title="EventEntryPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add events" Clicked="OnShopListAddedClicked" />
+        <ToolbarItem Text="Adauga un eveniment care te intereseaza" Clicked="OnEventAddedClicked" />
     </ContentPage.ToolbarItems>
     <ListView x:Name="listView" Margin="20" ItemSelected="OnListViewItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Description}" Detail="{Binding Date}" />
+                <TextCell Text="{Binding EventName}" Detail="{Binding Adress}" />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

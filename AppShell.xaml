@@ -15,8 +15,8 @@
             <ShellContent Title="Divertisment" ContentTemplate="{DataTemplate local:Divertisment}"/>
             <ShellContent Title="Cultural" ContentTemplate="{DataTemplate local:Social}"/>
             <ShellContent Title="Social" ContentTemplate="{DataTemplate local:Cultural}"/>
-            <ShellContent Title="My events" ContentTemplate="{DataTemplate local:ListEntryPage}"
- />
+            <ShellContent Title="My events" ContentTemplate="{DataTemplate local:ListEntryPage}"/>
+            <ShellContent Title="My list" ContentTemplate="{DataTemplate local:EventEntryPage}"/>
         </Tab>
         
 
